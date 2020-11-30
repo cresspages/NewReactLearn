@@ -1,0 +1,8 @@
+.reduxcom{
+    width: 400px;
+    margin: auto;
+}
+
+.reduxcom .input-area {
+    display: flex;
+}

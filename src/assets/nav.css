@@ -1,0 +1,13 @@
+.nav{
+    padding: 10px;
+}
+
+.nav > a{
+    margin: 10px;
+    color: #bddfd7c2;
+    text-decoration: none;
+}
+
+.nav > .active{
+    color: #0F96FD;
+}

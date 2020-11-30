@@ -1,0 +1,19 @@
+#great{
+    width: 100px;
+}
+
+#great > div {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(226, 226, 226);
+}
+
+#great > div:hover {
+    cursor: pointer;
+}
+
+#great > .yes {
+    color: white;
+    background-color: #0F96FD;
+}

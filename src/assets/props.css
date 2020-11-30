@@ -1,0 +1,12 @@
+[data-component="greate-button"] .button{
+    width: 100px;
+    height: 40px;
+    background-color:  rgb(226, 226, 226);
+    text-align: center;
+    line-height: 40px;
+}
+
+[data-component="greate-button"] .yes{
+    color: white;
+    background-color: #0F96FD;
+}
