@@ -1,10 +1,18 @@
-import { createContext, useContext } from 'react';
+import { useContext } from 'react';
 
-const nameContext = createContext(null);
+import { NameContext } from './HuseContext';
 
 function HuseContext(){
-    const name = useContext(nameContext);
+    const name = useContext(NameContext);
     return (
+        // 不使用useContext
+        // <NameContext.Consumer>
+        //     {(name) => (
+        //         <p>子组件渲染数据{name}</p>
+        //     )}
+        // </NameContext.Consumer>
+
+        // 使用useContext
         <p>子组件渲染数据{name}</p>
     )
 }
