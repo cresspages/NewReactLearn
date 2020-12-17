@@ -102,13 +102,14 @@ class All extends React.Component {
 
         <Router>
             <Nav routerData={firstLevel} />
-
+            
             {/* Switch 仅会匹配一个页面 */}
             <Switch>
+
               {/* 使用jsx */}
               <Route path='/' component={App} exact />
               <Route path="/home" component={App} exact />
-              <Route path="/firstlevel">
+              <Route path="/firstlevel" exact>
                 <Nav routerData={firstSecondLevel} exact />
 
                 <Route path="/firstlevel/state" component={StateL}  exact />
@@ -116,7 +117,7 @@ class All extends React.Component {
                 <Route path="/firstlevel/renderlist" component={RenderList} exact />
                 <Route path="/firstlevel/comment" component={Comment} exact />
               </Route>
-              <Route path="/seconedlevel">
+              <Route path="/seconedlevel" exact>
                 <Nav routerData={seconedSecondLevel} />
 
                 <Route path="/seconedlevel/lifecycle" component={Lifecycle} exact />
