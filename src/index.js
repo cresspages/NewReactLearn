@@ -109,15 +109,15 @@ class All extends React.Component {
               {/* 使用jsx */}
               <Route path='/' component={App} exact />
               <Route path="/home" component={App} exact />
-              <Route path="/firstlevel" exact>
-                <Nav routerData={firstSecondLevel} exact />
+              <Route path="/firstlevel">
+                <Nav routerData={firstSecondLevel} />
 
                 <Route path="/firstlevel/state" component={StateL}  exact />
                 <Route path="/firstlevel/props" component={Props} exact />
                 <Route path="/firstlevel/renderlist" component={RenderList} exact />
                 <Route path="/firstlevel/comment" component={Comment} exact />
               </Route>
-              <Route path="/seconedlevel" exact>
+              <Route path="/seconedlevel">
                 <Nav routerData={seconedSecondLevel} />
 
                 <Route path="/seconedlevel/lifecycle" component={Lifecycle} exact />
